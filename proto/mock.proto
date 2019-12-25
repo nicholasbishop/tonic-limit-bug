@@ -1,0 +1,12 @@
+syntax = "proto3";
+package mock;
+
+service Mock {
+    rpc DoIt (DoItRequest) returns (DoItReply);
+}
+
+message DoItRequest {}
+
+message DoItReply {
+  bytes data = 1;
+}
