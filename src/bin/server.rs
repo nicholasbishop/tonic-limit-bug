@@ -30,6 +30,8 @@ impl Mock for MockService {
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    env_logger::init();
+
     let addr = "[::1]:50051".parse()?;
     let mock = MockService {};
 

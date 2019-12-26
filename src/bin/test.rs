@@ -31,6 +31,8 @@ fn get_num_clients() -> usize {
 
 #[tokio::main]
 async fn main() -> Result<(), BoxError> {
+    env_logger::init();
+
     let num_clients = get_num_clients();
 
     let _server = run_server()?;
