@@ -5,13 +5,12 @@ authors = ["Nicholas Bishop <nicholasbishop@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-bytes = "0.4"
 env_logger = "0.7"
 futures = "0.3"
-prost = "0.5"
+prost = "0.6"
 structopt = "0.3"
-tokio = { version = "0.2.6", features = ["full"] }
-tonic = "0.1.0-beta.1"
+tokio = { version = "0.2.9", features = ["full"] }
+tonic = "0.1"
 
 [build-dependencies]
-tonic-build = "0.1.0-beta.1"
+tonic-build = "0.1"
